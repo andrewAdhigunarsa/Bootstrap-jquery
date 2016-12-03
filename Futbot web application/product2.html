@@ -1,0 +1,319 @@
+ <!doctype html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta name="keywords" content="Football, Soccer, Adidas">
+        
+        <meta name="description" content="Soccer and Sport online shop that sells adidas range of soccer boots">
+        
+        <!-- Match the layout width to the device width and set the zoom level to 1:1 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Make Internet Explorer render the page with the engine of latest version "Edge" -->
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+       
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://bootswatch.com/lumen/bootstrap.min.css">
+        
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+        
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+        
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+        <!-- this the link to the custom css styling -->
+        <link href="style.css" rel="stylesheet">
+
+        <script src="futbal2.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js" > > </script> 
+
+        <title>FUTBAL</title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+
+        
+
+        <!-- this is the NAVBAR-->
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="header-container " style="background-color:grey; margin:0; height:40px;">
+                    <div class="container">
+                        <div style="float:right; margin:8px 0;">
+                            <a href="#myModal" data-toggle="modal" style="color:white !important;">Login</a>
+                            <span style="color:white">|</span>
+
+                            <!--Trigger the modal with a button -->
+                            <a style="color:white !important;" data-toggle="modal" href="#myModal">Sign Up</a>
+                            
+                              
+ 
+                        </div>
+                    </div>
+
+            </div>
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+
+                    </button>
+
+                    <!--LOGO HERE -->
+                    <a href="index.html"><img src="images/logo.png" alt="FUTBAL" style="width:160px; margin:0px; "></a>
+
+                </div>
+                <div id="navbar" class="navbar-collapse collapse navbar-right">
+                    <ul id="mainNav" class="nav navbar-nav">
+                        <li><a href="index.html">Home</a>
+                        </li>
+                        <li class="active"><a href="shop.html">Shop</a>
+                        </li>
+            
+                         <li ><a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                          <input class="form-control" placeholder="Search" type="text">
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+
+        </nav>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    
+    <!-- This is the ads carousel at the top -->
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="2000">
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active" style="height:70px; background-color:grey;">
+              <div class="carouselAd">
+                <p>Free Shipping on all items</p>
+              </div>
+            </div>
+            <div class="item" style="height:70px; background-color:lightgrey;">
+              <div class="carouselAd">
+                <p>10% discount for purchase over $350</p>
+              </div>
+            </div>
+            <div class="item" style="height:70px; background-color:black; color:red;">
+              <div class="carouselAd">
+                <p>Crazy Sales this month</p>
+              </div>
+            </div>
+
+          </div>
+
+    </div>
+
+     <!--This is the breadcrumb-->
+
+    <div class="container">
+        <ol class="breadcrumb">
+            <li >Home</li>
+            <li >Contact</li>
+            <li class="active">Adidas</li>
+           
+        </ol>
+    </div>
+        
+<br/>
+    
+<!--Modal for Sign up-->
+
+
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Log in</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form action="#" method="post" id="contractFor">
+                                <div class="form-group">
+                                    <label for="fullname" class="control-label">User Name</label>
+                                    <input type="text" class="form-control" name="fullname" id="fullname"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="control-label">Password</label>
+                                    <input type="password" class="form-control" name="password" id="password"/>
+                                </div>
+                                <div class="form-group" >
+                                    <input type="submit" value="  Sign in  " class="btn btn-default"/> &nbsp; &nbsp; <a>Create an account</a>
+                                </div>
+                                <p><a>Forgot password?</a></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--This is the Hidden Form-->
+
+<div id="hiddenForm" class="container">
+	<h2>My Cart</h2>
+		<form action="mailto:andrew.adhigunarsa@gmail.com" method="post" id="FormValidation" onSubmit="return validate();" enctype="text/plain">
+	        <table class="table table-striped table-hover ">
+	            <tr>
+	                <th>Image</th>
+	                <th>Product</th>
+	                <th>Description</th>
+	                <th><label for="cartQuantity">Qty</label></th>
+	                <th>Price</th>
+
+	            </tr>
+	            <tr>
+	                <td ><img id="cartImage" src="#" style="width: 50px;" alt=" soccer boots"></td>
+	                <td id="cartProductName"></td>
+	                <td id="cartProductDescription"></td>
+	                <td><input class="form-control neededInput" type="number" name="cartQuantity" id="cartQuantity" value="0" min="0" style="width:70px;"  onchange="updatePrice()"/></td>
+	                <td id="cartPrice" class="price"></td>
+	            </tr>
+	            <tr>
+	                <td colspan="3"></td>
+	                <td ><label for="subtotal"><strong> Subtotal</strong></label></td>
+	                <td><strong ><input type="text" name="subtotal" id="subtotal" class="form-control price"/></strong></td>
+	            </tr>
+	            <tr>
+	                <td colspan="3"></td>
+	                <td ><label for="shipping"><strong> Shipping</strong></label></td>
+	                <td><strong><input type="text" name="shipping" id="shipping" class="form-control price"/></strong></td>
+	            </tr>
+	            <tr>
+	                <td colspan="3"></td>
+	                <td ><label for="GST"><strong> GST</strong></label></td>
+	                <td><strong><input type="text" name="GST" id="GST" class="form-control price"/></strong></td>
+	            </tr>
+
+                <input type="hidden" value="#" id="productId" name="productId"/ >
+                <input type="hidden" value="#" id="formProductSize" name="formProductSize" />
+
+	        </table>
+            <div class="col-sm-8">
+                <div class="form-group">
+                    <label for="formfullname" class="control-label">Full Name:</label>
+                    <input type="text" class="form-control neededInput" name="fullname" id="formfullname"/>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="control-label">E-mail address:</label>
+                    <input type="email" class="form-control neededInput" name="email" id="email"/>
+                </div>
+                 <div class="form-group">
+                    <label for="address" class="control-label">Address:</label>
+                    <input type="text" class="form-control neededInput" name="address" id="address"/>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Confirm" class="btn btn-primary" id="submitButton"/>
+                    <span>&nbsp; or &nbsp;</span>
+                    <input type="reset" value="Cancel" class="btn btn-default " id="cancelCart" onclick="getBackToProductDescription()" />
+                </div>
+            </div>
+
+        </form>
+        
+</div>
+
+
+<!--This is the content for product page-->
+<div id="productContent" class="container">
+		<div class="row">
+			<div class="col-sm-7">
+				<div class="col-sm-11">
+					<img id="productImage" class="img-responsive" src="images/products/adidas4.jpg" alt="Adidas Copa Mundial">
+				</div>
+			</div>
+			<div class="col-sm-5">
+				<h1 id="productName"><span style="font-weight:bold;">Adidas</span> Copa Mundial</h1>
+				<h3 >Price: $<span id="productPrice">350</span></h3>
+				<form>
+					
+					<div class="row">
+						<div class="col-xs-4">
+							<label class="control-label" for="productSize">Pick a size</label>
+							<select class="form-control" name="productSize" id="productSize">
+
+								<option value="small" id="small">small</option>
+								<option value="medium" id="medium">medium</option>
+								<option value="large" id="large">large</option>
+							</select>
+						</div>
+					</div>
+                    <br/>
+					<div class="row">
+						<div class="col-xs-4">
+							<label for="quantity" class="control-label">Quantity</label><br/>
+							<input class="form-control" type="number" name="quantity" id="quantity" value="0" min="0"/>
+							&nbsp;
+							<p id="totalPrice"></p>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-4">
+							<input type=button id="buyNowButton" value="Buy Now" class="btn btn-primary" onclick="placeInputToCart()" />
+						</div>
+					</div>
+				
+				</form>
+				
+			</div>
+		</div>
+		<br/>
+		<br/>
+		<br/>
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+				<h1 class="boldCentered">
+					Adidas Copa Mundial
+				</h1>
+				<p class="centered largePara" id="productDescription">
+					Classic Adidas boots 1998 model worn by many famous footballer. Constructed with the best cow leather,
+					this boots have been proven to withstand the test of time. 
+				</p>
+			</div>
+		</div>
+		<br/>
+		<br/>
+		<br/>
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe width="853" height="480" src="https://www.youtube.com/embed/kZnO1i6Jcgo?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+
+</div>
+
+    <hr/>
+
+<!--This the footer-->
+        
+         <footer class="container" >
+                <p class="pull-right"><a href="#top">back to top</a></p>
+            
+                <p>&copy; 2016 <a href="#">Terms</a> - <a href="#">Privacy</a></p>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta name="keywords" content="Football, Soccer, Sports">
+        
+        <meta name="description" content="Best Soccer and Sport online shop">
+        
+        <!-- Match the layout width to the device width and set the zoom level to 1:1 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Make Internet Explorer render the page with the engine of latest version "Edge" -->
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+       
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://bootswatch.com/lumen/bootstrap.min.css">
+        
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+        
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+        
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+        <!-- this the link to the custom css styling -->
+        <link href="style.css" rel="stylesheet">
+        
+        <script src="futbal.js"></script>
+        
+        <title>FUTBAL</title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+
+        
+
+        <!-- this is the NAVBAR-->
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="header-container " style="background-color:grey; margin:0; height:40px;">
+                    <div class="container">
+                        <div style="float:right; margin:8px 0;">
+                            <a href="#myModal" data-toggle="modal" style="color:white !important;">Login</a>
+                            <span style="color:white">|</span>
+
+                            <!--Trigger the modal with a button -->
+                            <a style="color:white !important;" data-toggle="modal" href="#myModal">Sign Up</a>
+                            
+                              
+ 
+                        </div>
+                    </div>
+
+            </div>
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+
+                    </button>
+
+                    <!--LOGO HERE -->
+                    <a href="index.html"><img src="images/logo.png" alt="FUTBAL" style="width:160px; margin:0px; "></a>
+
+
+                </div>
+                <div id="navbar" class="navbar-collapse collapse navbar-right">
+                    <ul id="mainNav" class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a>
+                        </li>
+                        <li><a href="shop.html">Shop</a>
+                        </li>
+                        
+                         <li><a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                          <input class="form-control" placeholder="Search" type="text">
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+
+        </nav>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    <!-- this is the carousel containing jumbtron and video-->
+
+    
+    <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Carousel Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#homeCarousel" data-slide-to="1"></li>
+            <li data-target="#homeCarousel" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <div class="jumbotron embed-responsive embed-responsive-16by9" style="background-image: url(images/ads/ad1.jpg)">
+                    <div class="container" style="margin:20% 5%;" align="center">
+                        <h1>ADIZERO UNCAGED</h1>
+                         <p>Release your inner Beast</p>
+                         <a href="shop.html" class="btn btn-default btn-lg hidden-xs">Shop now</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="item ">
+                <div class="jumbotron embed-responsive embed-responsive-16by9" style="background-image: url(images/ads/ad2.jpg)">
+                    <div class="container" style="margin:20% 20%;" >
+                        <h1>Adidas Revolution</h1>
+                         <p>Control the game<br/>in Bootstrap</p>
+                         <a href="shop.html" class="btn btn-default btn-lg hidden-xs">Shop now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                 <div class="jumbotron embed-responsive embed-responsive-16by9 jumboMargin" >
+                    <iframe width="1600" height="900" src="https://www.youtube.com/embed/mTSEoRwIUWw?rel=0&amp;controls=0&amp;showinfo=0;" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+          </div>
+
+          <!-- Carousel Controls -->
+          <a class="left carousel-control" href="#homeCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#homeCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+    </div>
+
+    <!--    
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="active">Home</li>
+        </ol>
+    </div>
+    -->
+
+          <!--Modal for Sign up-->
+
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Log in</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form action="#" method="post" id="contractFor">
+                                <div class="form-group">
+                                    <label for="fullname" class="control-label">User Name</label>
+                                    <input type="text" class="form-control" name="fullname" id="fullname">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="control-label">Password</label>
+                                    <input type="password" class="form-control" name="password" id="password">
+                                </div>
+                                <div class="form-group" >
+                                    <input type="submit" value="  Sign in  " class="btn btn-default"> &nbsp; &nbsp; <a>Create an account</a>
+                                </div>
+                                <p><a>Forgot password?</a></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- this is the body 3-->
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                     <h1 align="center">Futbal</h1>
+                     <p class="centered largePara">Be fit this summer with our latest range of Soccer Boots.</p>
+                     <br/>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <br/>
+
+        <!-- This is the Tab section in the home page-->
+
+        <div class="row">
+            <div class="container hidden-xs">
+
+
+                <!--This is Naviagation for tab-->
+
+                <ul class="nav nav-tabs" style="font-size:2em; text-align:center;">
+                    <li class="active" ><a data-toggle="tab" href="#sale" style="color:red;">SALE</a></li>
+                    <li><a data-toggle="tab" href="#featured">FEATURED</a></li>
+                    <li><a data-toggle="tab" href="#new">NEW</a></li>
+                </ul>
+                
+                <!--This is Content for home tab-->
+
+                <div class="tab-content">
+                    <div id="sale" class="tab-pane fade in active">
+                        <div class="row">
+                            <div class="col-sm-5">        
+                                <img class="itemImages" src="images/products/nike1.jpg" alt="Nike Mercurial">
+                            </div>
+                            <div class="col-sm-7">
+                                <h2>NIKE Mercurial <span class="label label-danger">On Sale</span></h2>
+                                <p>Our Nike Mercurial range are on sale just for this summer. Don't be late, this sale only last till the end of this month. over 1000 mercurial boots have been sold just in the last season.</p>
+                            <br/>
+                                <a href="product1.html"><button class="btn btn-primary btn-lg">buy now</button></a>
+                                
+                            </div>
+                        </div>    
+                    </div>
+                
+                    <div id="featured" class="tab-pane fade">
+                         <div class="row">
+                            <div class="col-sm-7">
+                                <h2>Adidas Messi</h2>
+                                <p>Worn by the best player in the world. Very durable build, great style, quality material, hi-tech sole component. This boots are for those who aim to be the best.</p>
+                                 <br/>
+                                <button class="btn btn-primary btn-lg">buy now</button><span>  </span>
+                                
+                            </div>
+                            <div class="col-sm-5">        
+                                <img class="itemImages" src="images/products/adidas7.jpg" alt="Adidas Messi">
+                            </div>
+                        </div>
+                    </div>  
+            
+                    <div id="new" class="tab-pane fade">
+                         <div class="row">
+                            <div class="col-sm-5">        
+                                <img class="itemImages" src="images/products/adidas6.jpg" alt="Adidas Adizero">
+                            </div>
+                            <div class="col-sm-7">
+                                <h2>Adidas ADIZERO <span class="label label-success">New</span></h2>
+                                <p>This is the latest range of our Adidas boots. Build with cow leather, very durable material. equiped with control and accuracy. Great for all rounder player.</p>
+                                 <br/>
+                                <button class="btn btn-primary btn-lg">buy now</button><span>  </span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br/>
+        <hr/>
+        <br/>
+
+        <div class="container" align="center">
+            <h1 style="font-size:4em;"> SHOP BY BRAND</h1>
+            <br/>
+            <br/>
+            <br/>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 centered imageSelect">
+                    <a href="shop.html#nike">
+                    <img class="roundImage center-block itemImages " src="images/nike.jpg" alt="Nike logo">
+                    <h1 class="boldCentered">NIke</h1>
+                    <br/>
+                    <p class="largePara">Build for speed, durability and precision</p>
+                    </a>
+                </div>
+                <div class="col-sm-4 centered imageSelect" >
+                    <a href="shop.html">
+                    <img class="roundImage center-block itemImages" src="images/adidas.jpg" alt="Adidas logo">
+                    <h1 class="boldCentered">ADIDAS</h1>
+                    <br/>
+                    <p class="largePara">Build for control, precision and comfort</p>
+                    </a>
+                </div>
+                <div class="col-sm-4 centered imageSelect" >
+                    <a href="shop.html#puma">
+                    <img class="roundImage center-block itemImages" src="images/puma.png" alt="Puma logo">
+                    <h1 class="boldCentered">PUMA</h1>
+                    <br/>
+                    <p class="largePara">Build with style, durable material and quality</p>
+                    </a>
+                </div>
+            </div>
+        </div>    
+            <br/>
+            <br/>
+
+    <!-- Ad Slider -->
+
+         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="2000">
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active" style="height:70px; background-color:grey;">
+              <div class="carouselAd">
+                <p>Free Shipping on all items</p>
+              </div>
+            </div>
+            <div class="item" style="height:70px; background-color:lightgrey;">
+              <div class="carouselAd">
+                <p>10% discount for purchase over $350</p>
+              </div>
+            </div>
+            <div class="item" style="height:70px; background-color:black; color:red;">
+              <div class="carouselAd">
+                <p>Crazy Sales this month</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+          
+            <hr/>
+            
+         <footer class="container" >
+                <p class="pull-right"><a href="#top">back to top</a></p>
+            
+                <p>&copy; 2016 <a href="#">Terms</a> - <a href="#">Privacy</a></p>
+        </footer>
+
+    </body>
+</html>

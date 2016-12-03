@@ -1,0 +1,128 @@
+
+
+.dropdown:hover .dropdown-menu {
+            display: block;
+            }
+
+
+#mainNav li:hover {background-color: white;}
+
+.jumbotron { background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+
+
+}
+
+.jumbotron div h1 {
+	font-weight: bold;
+	font-size: 5.9vw;
+	color: white;
+	text-shadow: 3px 2px 1px rgba(150, 150, 150, 1);
+}
+
+.jumbotron div p {
+
+	font-size: 3vw;
+	font-weight: bold;
+	color: white;
+	text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+}
+
+
+
+.nav-tabs > li{
+    float:none;
+    display:inline-block;
+}
+
+.nav-tabs, .nav-pills {empty-cells: 
+    text-align:center;
+}
+
+.tab-pane {padding: 30px;}
+
+.roundImage{
+	border-radius: 50%;
+	margin: auto;
+	padding: 10%;
+
+}
+
+
+
+.page-header {
+	text-align: center;
+	margin: 0;
+	font-weight: bold;
+}
+
+.itemImages {
+	width: 100%;
+
+}
+
+.largePara {
+	font-size: 1.5em;
+	color: black !important;
+}
+
+.centered {
+	text-align: center;
+
+}
+
+.boldCentered {
+	text-align:center;
+	font-weight: bold;
+
+}
+.tabs {
+	border-bottom: 0.5px solid lightgrey;
+}
+
+
+.imageSelect img:hover {
+	border: 1px solid lightgrey;
+	margin: 0;
+
+}
+
+.carouselAd{
+	font-size: 2em;
+
+	text-align: center;
+	color: white;
+	position: relative;
+	top: 20%;
+	
+}
+
+.cartImages{
+	width: 50px;
+
+
+}
+
+#hiddenForm {
+	display: none;
+
+
+}
+
+.price:before{content:"$"}
+
+
+th {
+	font-weight: bold;
+
+}
+
+#cartPrice, #subtotal, #shipping, #gst{
+	min-width: 100px;
+}
+
+
+.neededInput {
+	position: relative;
+}

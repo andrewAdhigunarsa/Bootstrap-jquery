@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta name="keywords" content="Football, Soccer, Sports">
+        
+        <meta name="description" content="Soccer and Sport online shop">
+        
+        <!-- Match the layout width to the device width and set the zoom level to 1:1 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Make Internet Explorer render the page with the engine of latest version "Edge" -->
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+       
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://bootswatch.com/lumen/bootstrap.min.css">
+        
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+        
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+        
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+        <!-- this the link to the custom css styling -->
+        <link href="style.css" rel="stylesheet">
+
+        <script src="futbal.js"></script>
+        
+        <title>FUTBAL</title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+
+        
+
+        <!-- this is the NAVBAR-->
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="header-container" style="background-color:grey; margin:0; height:40px;">
+                    <div class="container">
+                        <div style="float:right; margin:8px 0;">
+                            <a href="#myModal" data-toggle="modal" style="color:white !important;">Login</a>
+                            <span style="color:white">|</span>
+
+                            <!--Trigger the modal with a button -->
+                            <a style="color:white !important;" data-toggle="modal" href="#myModal">Sign Up</a>
+                            
+                              
+ 
+                        </div>
+                    </div>
+
+            </div>
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+
+                    </button>
+                    <!--LOGO HERE -->
+                    <a href="index.html"><img src="images/logo.png" alt="FUTBAL" style="width:160px; margin:0px; "></a>
+               
+
+                </div>
+                <div id="navbar" class="navbar-collapse collapse navbar-right">
+                     <ul id="mainNav" class="nav navbar-nav">
+                        <li><a href="index.html">Home</a>
+                        </li>
+                        <li class="active"><a href="shop.html">Shop</a>
+                        </li>
+            
+                         <li ><a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                          <input class="form-control" placeholder="Search" type="text">
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+
+        </nav>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    <!-- This is the ads carousel at the top -->
+
+ <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="2000">
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active" style="height:70px; background-color:grey;">
+              <div class="carouselAd">
+                <p>Free Shipping on all items</p>
+              </div>
+            </div>
+            <div class="item" style="height:70px; background-color:lightgrey;">
+              <div class="carouselAd">
+                <p>10% discount for purchase over $350</p>
+              </div>
+            </div>
+            <div class="item" style="height:70px; background-color:black; color:red;">
+              <div class="carouselAd">
+                <p>Crazy Sales this month</p>
+              </div>
+            </div>
+
+          </div>
+
+    </div>
+
+     <!--This is the breadcrumb-->
+
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="active">Home</li>
+            <li >Shop</li>
+           
+        </ol>
+    </div>
+
+    <!--This is the header-->
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Buy Me</h1>
+            <p>This is the shop page</p>
+        </div>
+    </div>
+        
+
+    
+          <!--Modal for Sign up-->
+
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Log in</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form action="#" method="post" id="contractFor">
+                                <div class="form-group">
+                                    <label for="fullname" class="control-label">User Name</label>
+                                    <input type="text" class="form-control" name="fullname" id="fullname">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="control-label">Password</label>
+                                    <input type="password" class="form-control" name="password" id="password">
+                                </div>
+                                <div class="form-group" >
+                                    <input type="submit" value="  Sign in  " class="btn btn-default"> &nbsp; &nbsp; <a>Create an account</a>
+                                </div>
+                                <p><a>Forgot password?</a></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    <!--This is the Tab container-->
+
+    <div class="container">
+        <div class="row">
+
+            <!-- This is the Tab navigation-->
+
+            <div class="col-sm-2">
+               <h2>Brands</h2> 
+               <ul class="nav nav-pills nav-stacked">
+                    <li><a class="active tabs" href="#adidas" data-toggle="tab">ADIDAS</a></li>
+                    <li><a class="tabs" href="#nike" data-toggle="tab">NIKE</a></li>
+                    <li><a class="tabs" href="#puma" data-toggle="tab">PUMA</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-10">
+                <!--This is Content-->
+
+                <div class="tab-content">
+                    <div id="adidas" class="tab-pane fade in active">
+                        <h3 class="brandName">ADIDAS</h3>
+                        <p>Adidas Boots are for those player who likes to control the ball. Adidas offer wide range of high quality soccer boots.</p>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="images/products/adidas4.jpg" alt="Adidas Copa Mundial" class="img-responsive" style="width:100%;">
+                                    <div class="caption">
+                                        <h3 class="bootsType">Adidas Copa Mundial</h3>
+                                        <p class="bootsDescription">Classic Adidas boots 1998 model worn by many famous footballer </p>
+                                        <p class="pull-right price">350.00</p>
+                                        <p><a href="product2.html"><button type="button" class="btn btn-primary">Buy Now</button></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="images/products/adidas5.jpg" alt="Adidas Ace 15.1" class="img-responsive" style="width:100%;">
+                                    <div class="caption">
+                                        <h3 class="bootsType">Adidas Ace 15.1  <span class="label label-danger">On Sale</span></h3>
+                                        <p class="bootsDescription">Adidas special edition boots for defenders and goal keeper</p>
+                                        <p class="pull-right price">200</p>
+                                        <p><a href="product3.html"><button type="button" class="btn btn-primary">Buy Now</button></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="images/products/adidas9.jpg" alt="Adidas X" class="img-responsive" style="width:100%;">
+                                    <div class="caption">
+                                        <h3 class="bootsType">Adidas X</h3>
+                                        <p class="bootsDescription">Top of the range boots, with the highest quality material and custom fit</p>
+                                        <p class="pull-right price">150</p>
+                                        <p><a href="#"><button type="button" class="btn btn-primary">Buy Now</button></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                       
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="images/products/adidas10.jpg" alt="Adidas Predator Instict" class="img-responsive" style="width:100%;">
+                                    <div class="caption">
+                                        <h3 class="bootsType">Adidas Predator Instict  <span class="label label-success">New</span></h3>
+                                        <p class="bootsDescription">Latest Predator range, with sweet spot build in. Built for the best.</p>
+                                        <p class="pull-right price">100</p>
+                                        <p><a href="#"><button type="button" class="btn btn-primary">Buy Now</button></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="images/products/adidas11.jpg" alt="Adidas Ace 15" class="img-responsive" style="width:100%;">
+                                    <div class="caption">
+                                        <h3 class="bootsType">Adidas Ace 15</h3>
+                                        <p class="bootsDescription">Latest version of Adidas Ace, with improved design and material.</p>
+                                        <p class="pull-right price">150</p>
+                                        <p><a href="#"><button type="button" class="btn btn-primary"  >Buy Now</button></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="images/products/adidas12.jpg" alt="Adidas Predator Absolition" class="img-responsive" style="width:100%;">
+                                    <div class="caption">
+                                        <h3 class="bootsType">Adidas Predator Absolition</h3>
+                                        <p class="bootsDescription">Affordable range of adidas soccer boots. Very good quality material and very durable</p>
+                                        <p class="pull-right price">200</p>
+                                        <p><a href="#"><button type="button" class="btn btn-primary"  >Buy Now</button></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+                    </div>
+                
+                    <div id="nike" class="tab-pane fade">
+                        <h3 class="brandName">NIKE</h3>
+                        <p>If you like speed and acuracy, Nike soccer boots are the one to go for.</p>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="images/products/nike1.jpg" alt="Nike Mercurial 3rd Generation" class="img-responsive" style="width:100%;">
+                                    <div class="caption">
+                                        <h3 class="bootsType">NIKE Mercurial 3rd Generation <span class="label label-danger">On Sale</span></h3>
+                                        <p class="bootsDescription">Top of the range of NIKE Soccer Boots. Give you speed, endurance and accuracy</p>
+                                        <p class="pull-right price">250</p>
+                                        <p><a href="product1.html"><button type="button" class="btn btn-primary"  >Buy Now</button></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="images/products/nike2.jpg" alt="Nike Tiempo" class="img-responsive" style="width:100%;">
+                                    <div class="caption">
+                                        <h3 class="bootsType">NIKE Tiempo</h3>
+                                        <p class="bootsDescription">Classic Leather Soccer boots by NIKE. Built with premium leather with weather proof layers and soft touch lining</p>
+                                        <p class="pull-right price">90</p>
+                                        <p><a href="#"><button type="button" class="btn btn-primary"  >Buy Now</button></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="images/products/nike3.jpg" alt="Nike Hypervenom" class="img-responsive" style="width:100%;">
+                                    <div class="caption">
+                                        <h3 class="bootsType">NIKE Hypervenom</h3>
+                                        <p class="bootsDescription">Inspired by nature predators. Built for speed and accuracy.</p>
+                                        <p class="pull-right price">250</p>
+                                        <p><a href="#"><button type="button" class="btn btn-primary"  >Buy Now</button></a></p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="images/products/nike4.png" alt="NIKE Victory" class="img-responsive" style="width:100%;">
+                                    <div class="caption">
+                                        <h3 class="bootsType">NIKE Victory</h3>
+                                        <p class="bootsDescription">Very popular NIKE soccer range, with comfort, durability and soft touch</p>
+                                        <p class="pull-right price">150</p>
+                                        <p><a href="#"><button type="button" class="btn btn-primary"  >Buy Now</button></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="images/products/nike6.jpg" alt="NIKE Vapor" class="img-responsive" style="width:100%;">
+                                    <div class="caption">
+                                        <h3 class="bootsType">NIKE Vapor</h3>
+                                        <p class="bootsDescription">The lightest boots in the world. Weighing just under 100gr.</p>
+                                        <p class="pull-right price">300</p>
+                                        <p><a href="#"><button type="button" class="btn btn-primary"  >Buy Now</button></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="images/products/nike7.jpg" alt="NIKE Galaxy" class="img-responsive" style="width:100%;">
+                                    <div class="caption">
+                                        <h3 class="bootsType">NIKE Galaxy</h3>
+                                        <p class="bootsDescription">Worn by Ronaldo. Made with custom design special for Christiano Ronaldo</p>
+                                        <p class="pull-right price">250</p>
+                                        <p><a href="#"><button type="button" class="btn btn-primary"  >Buy Now</button></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+            
+                    <div id="puma" class="tab-pane fade">
+                        <h3 class="brandName">PUMA</h3>
+                        <p>With very wide variety of soccer boots in the market, Puma offer more affordable range of soccer boots with out compromising the quality</p>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="images/products/puma1.jpg" alt="Puma Diablo" class="img-responsive" style="width:100%;">
+                                    <div class="caption">
+                                        <h3 class="bootsType">PUMA Diablo</h3>
+                                        <p class="bootsDescription">Puma Diablo are custom built for those with wider feet. Made with premium breathable Cow leather</p>
+                                        <p class="pull-right price">200</p>
+                                        <p><a href="#"><button type="button" class="btn btn-primary"  >Buy Now</button></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="images/products/puma2.jpg" alt="Puma Premier" class="img-responsive" style="width:100%;">
+                                    <div class="caption">
+                                        <h3 class="bootsType">PUMA Premier</h3>
+                                        <p class="bootsDescription">1998 Model, designed by the great PELE</p>
+                                        <p class="pull-right price">100</p>
+                                        <p><a href="#"><button type="button" class="btn btn-primary"  >Buy Now</button></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="images/products/puma3.jpg" alt="Puma Neon" class="img-responsive" style="width:100%;">
+                                    <div class="caption">
+                                        <h3 class="bootsType">PUMA Neon</h3>
+                                        <p class="bootsDescription">Stylish and moder soccer boots, to stand out amongst other players.</p>
+                                        <p class="pull-right price">150</p>
+                                        <p><a href="#"><button type="button" class="btn btn-primary"  >Buy Now</button></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                       
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="images/products/puma4.jpg" alt="Puma Zico" class="img-responsive" style="width:100%;">
+                                    <div class="caption">
+                                        <h3 class="bootsType">PUMA Zico</h3>
+                                        <p class="bootsDescription">Inspired by the legendary Zico, design to suit playmakers and sweepers.</p>
+                                        <p class="pull-right price">150</p>
+                                        <p><a href="#"><button type="button" class="btn btn-primary"  >Buy Now</button></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="images/products/puma5.jpg" alt="Puma Evo Power" class="img-responsive" style="width:100%;">
+                                    <div class="caption">
+                                        <h3 class="bootsType">PUMA Evo Power</h3>
+                                        <p class="bootsDescription">Most powerful boots in the soccer history</p>
+                                        <p class="pull-right price">200</p>
+                                        <p><a href="#"><button type="button" class="btn btn-primary"  >Buy Now</button></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="images/products/puma6.jpg" alt="Puma Evo Speed" class="img-responsive" style="width:100%;">
+                                    <div class="caption">
+                                        <h3 class="bootsType">PUMA Evo Speed</h3>
+                                        <p class="bootsDescription">Soccer Boots packed with incredible speed</p>
+                                        <p class="pull-right price">200</p>
+                                        <p><a href="#"><button type="button" class="btn btn-primary"  >Buy Now</button></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <hr/>        
+         <footer class="container" >
+                <p class="pull-right"><a href="#top">back to top</a></p>
+            
+                <p>&copy; 2016 <a href="#">Terms</a> - <a href="#">Privacy</a></p>
+        </footer>
+
+    </body>
+</html>

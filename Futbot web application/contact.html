@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta name="keywords" content="Futbal Contact">
+        
+        <meta name="description" content="Contact the best Soccer/Futbal shop">
+        
+        <!-- Match the layout width to the device width and set the zoom level to 1:1 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Make Internet Explorer render the page with the engine of latest version "Edge" -->
+        <meta http-equiv="x-ua-compatible" content="IE=edge">
+       
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://bootswatch.com/lumen/bootstrap.min.css">
+        
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+        
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+        
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+        <!-- this the link to the custom css styling -->
+        <link href="style.css" rel="stylesheet">
+
+        <script src="futbal.js"></script>
+        
+        <title>FUTBAL</title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+
+        
+
+        <!-- this is the NAVBAR-->
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="header-container " style="background-color:grey; margin:0; height:40px;">
+                    <div class="container">
+                        <div style="float:right; margin:8px 0;">
+                            <a href="#myModal" data-toggle="modal" style="color:white !important;">Login</a>
+                            <span style="color:white">|</span>
+
+                            <!--Trigger the modal with a button -->
+                            <a style="color:white !important;" data-toggle="modal" href="#myModal">Sign Up</a>
+                            
+                              
+ 
+                        </div>
+                    </div>
+
+            </div>
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+
+                    </button>
+
+                    <!--LOGO HERE -->
+                    <a href="index.html"><img src="images/logo.png" alt="FUTBAL" style="width:160px; margin:0px; "></a>
+
+                </div>
+                <div id="navbar" class="navbar-collapse collapse navbar-right">
+                    <ul id="mainNav" class="nav navbar-nav">
+                        <li><a href="index.html">Home</a>
+                        </li>
+                        <li><a href="shop.html">Shop</a>
+                        </li>
+                
+                         <li class="active"><a href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                          <input class="form-control" placeholder="Search" type="text">
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+
+        </nav>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    
+    <!-- This is the ads carousel at the top -->
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="2000">
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active" style="height:70px; background-color:grey;">
+              <div class="carouselAd">
+                <p>Free Shipping on all items</p>
+              </div>
+            </div>
+            <div class="item" style="height:70px; background-color:lightgrey;">
+              <div class="carouselAd">
+                <p>10% discount for purchase over $350</p>
+              </div>
+            </div>
+            <div class="item" style="height:70px; background-color:black; color:red;">
+              <div class="carouselAd">
+                <p>Crazy Sales this month</p>
+              </div>
+            </div>
+
+          </div>
+
+    </div>
+
+     <!--This is the breadcrumb-->
+
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="active">Home</li>
+            <li >Contact</li>
+           
+        </ol>
+    </div>
+
+    <!--This is the header-->
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Contact Us</h1>
+        </div>
+    </div>    
+<br/>
+    
+<!--Modal for Sign up-->
+
+
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Log in</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form action="#" method="post" id="contractFor">
+                                <div class="form-group">
+                                    <label for="fullname" class="control-label">User Name</label>
+                                    <input type="text" class="form-control" name="fullname" id="fullname">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="control-label">Password</label>
+                                    <input type="password" class="form-control" name="password" id="password">
+                                </div>
+                                <div class="form-group" >
+                                    <input type="submit" value="  Sign in  " class="btn btn-default"> &nbsp; &nbsp; <a>Create an account</a>
+                                </div>
+                                <p><a>Forgot password?</a></p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!-- This is the Forms-->
+    <div class="container">
+        
+        <div class="col-sm-6">
+            <h3>Customer Service</h3>
+            <p><a href="#">Order Status</a></p>
+            <p><a href="#">FAQ</a></p>
+            <p><a href="#">Warranty</a></p>
+
+            <h3>Quick Links</h3>
+            <p><a href="#">View Recent Orders</a></p>
+            <p><a href="#">Track By Order Number</a></p>
+            <p><a href="#">Forgot Password?</a></p>
+            <p><a href="#">Find Our Stores</a></p>
+
+            <h3>Contacts</h3>
+            <p>
+            United States
+            Email: Send Us A Message
+            Customer Service Hours of Operation: 
+            Phone: (800) 622-6953
+            M-F 5am - 8pm PST
+            Memorial Day 5/30
+            6am - 6pm
+            </p>
+            <p>
+            Warranty Service Hours of Operation:
+            Phone: (800) 622-6953 - press 3
+            M-F: 8am - 5pm PST
+            Memorial Day 5/30
+            CLOSED
+            </p>
+        </div>
+
+        <div class="col-sm-6">
+            <form action="mailto:andrew.adhigunarsa@gmail.com" method="post" id="contactform" enctype="text/plain">
+                <div class="form-group">
+                    <label for="formfullname" class="control-label">Full Name:</label>
+                    <input type="text" class="form-control" name="fullname" id="formfullname">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="control-label">E-mail address:</label>
+                    <input type="email" class="form-control" name="email" id="email">
+                </div>
+                 <div class="form-group">
+                    <label for="subject" class="control-label">Subject:</label>
+                    <input type="text" class="form-control" name="subject" id="subject">
+                </div>
+                <div class="form-group">
+                    <label for="message" class="control-label">Message:</label>
+                    <textarea class="form-control" name="message" id="message" rows="10"> </textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Send" class="btn btn-default">
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <div class="col-sm-12"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4002.1622219306623!2d38.203711441156514!3d44.42003640570356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDTCsDI1JzA5LjMiTiAzOMKwMTInMTkuMCJF!5e0!3m2!1sen!2sau!4v1458621797588" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+
+
+    <hr/>
+        
+         <footer class="container" >
+                <p class="pull-right"><a href="#top">back to top</a></p>
+            
+                <p>&copy; 2016 <a href="#">Terms</a> - <a href="#">Privacy</a></p>
+        </footer>
+
+    </body>
+</html>
